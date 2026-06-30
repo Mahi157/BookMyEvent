@@ -2,10 +2,9 @@
 
 ## Overview
 
-BookMyEvent is a responsive web-based platform designed to help students discover, explore, and register for various college events from a single portal. The platform provides a user-friendly interface for browsing Tech Fests, Cultural Events, Workshops, Music Concerts, Sports Tournaments, Hackathons, and other campus activities.
+BookMyEvent is a responsive web-based platform designed to help students discover, explore, and register for various college events from a single portal. The platform provides a user-friendly interface for browsing Tech Fests, Cultural Events, Workshops, Music Concerts, Sports Tournament, Hackathons, and other campus activities.
 
 The project aims to simplify event discovery and registration while offering an engaging user experience through modern UI components such as carousels, category-wise event pages, search functionality, and registration forms.
-
 ---
 
 ## Features
