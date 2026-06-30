@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Tech Events | BookMyEvent</title>
+
+<link rel="stylesheet"
+href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial,sans-serif;
+}
+
+body{
+background:#f5f5f5;
+}
+
+.header{
+background:#111827;
+color:white;
+padding:50px 20px;
+text-align:center;
+}
+
+.header h1{
+font-size:42px;
+margin-bottom:10px;
+}
+
+.header p{
+color:#d1d5db;
+}
+
+.tech-container{
+max-width:1300px;
+margin:auto;
+padding:40px 30px;
+}
+
+.filter-bar{
+display:flex;
+justify-content:space-between;
+align-items:center;
+margin-bottom:30px;
+flex-wrap:wrap;
+gap:15px;
+}
+
+.filter-bar input{
+padding:12px;
+width:300px;
+border:1px solid #ccc;
+border-radius:8px;
+}
+
+.filter-bar select{
+padding:12px;
+border:1px solid #ccc;
+border-radius:8px;
+}
+
+.event-grid{
+display:grid;
+grid-template-columns:
+repeat(auto-fit,minmax(280px,1fr));
+gap:25px;
+}
+
+.event-card{
+background:white;
+border-radius:12px;
+overflow:hidden;
+box-shadow:0 4px 15px rgba(0,0,0,.12);
+transition:.3s;
+}
+
+.event-card:hover{
+transform:translateY(-8px);
+}
+
+.event-card img{
+width:100%;
+height:220px;
+object-fit:cover;
+}
+
+.event-content{
+padding:18px;
+}
+
+.event-content h3{
+margin-bottom:12px;
+}
+
+.event-content p{
+margin-bottom:10px;
+color:#555;
+display:flex;
+align-items:center;
+gap:8px;
+}
+
+.event-content i{
+color:#EB4E32;
+}
+
+.book-btn{
+display:inline-block;
+margin-top:10px;
+background:#EB4E32;
+color:white;
+padding:10px 18px;
+text-decoration:none;
+border-radius:6px;
+transition:.3s;
+}
+
+.book-btn:hover{
+background:#d8432a;
+}
+
+.footer{
+margin-top:50px;
+background:#111827;
+color:white;
+text-align:center;
+padding:20px;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<section class="header">
+
+    <h1>Upcoming Events</h1>
+
+    <p> Discover exciting upcoming tech fests, cultural festivals, workshops, music concerts and sports tournaments scheduled across India's top colleges and universities.
+        Plan ahead and reserve your seat before registrations close. </p>
+
+</section>
+
+<section class="tech-container">
+
+<div class="filter-bar">
+
+<input
+type="text"
+id="searchBox"
+placeholder="Search Tech Events">
+
+<select id="eventFilter">
+
+    <option value="all">All Events</option>
+    <option value="tech">Tech</option>
+    <option value="cultural">Cultural</option>
+    <option value="music">Music</option> 
+    <option value="sports">Sports</option> 
+   <option value="workshop">Workshop</option>
+
+</select>
+
+</div>
+
+<div class="event-grid">
+
+    <div class="event-card" data-category="tech"> 
+        <img src="../assets/cards/techcard.jpg" alt=""> 
+        <div class="event-content"> 
+            <h3>Techfest 2026 Zonal</h3> 
+            <p><i class="bi bi-calendar-event"></i> October 12, 2026</p> 
+            <p><i class="bi bi-geo-alt"></i> IIT Gandhinagar</p> 
+            <a href="book.html" class="book-btn">Book Now</a> 
+        </div> 
+    </div>
+
+    <div class="event-card" data-category="tech"> 
+        <img src="../assets/cards/techcard5.jpg" alt=""> 
+        <div class="event-content"> 
+            <h3>AGENTATHON</h3> 
+            <p><i class="bi bi-calendar-event"></i> July 19-20, 2026</p> 
+            <p><i class="bi bi-geo-alt"></i> KG College of Arts and Science</p> 
+            <a href="book.html" class="book-btn">Book Now</a> 
+        </div> 
+    </div>
+    
+    <div class="event-card" data-category="cultural"> 
+        <img src="../assets/cards/culturalcard.jpg" alt=""> 
+        <div class="event-content"> 
+            <h3>Dharohar</h3> 
+            <p><i class="bi bi-calendar-event"></i> July 26, 2026</p> 
+            <p><i class="bi bi-geo-alt"></i> IIT Bombay</p> 
+            <a href="book.html" class="book-btn">Book Now</a> 
+        </div> 
+    </div>
+    
+    <div class="event-card" data-category="cultural"> 
+        <img src="../assets/cards/culturalcard2.jpg" alt=""> 
+        <div class="event-content"> 
+            <h3>Spring Fest</h3> 
+            <p><i class="bi bi-calendar-event"></i> August 24, 2026</p> 
+            <p><i class="bi bi-geo-alt"></i> IIT Kharagpur</p> 
+            <a href="book.html" class="book-btn">Book Now</a> 
+        </div> 
+    </div>
+    
+    <div class="event-card" data-category="music"> 
+        <ig src="../assets/cards/musiccard2.jpg" alt=""> 
+        <div class="event-content"> 
+            <h3>Qurated Mehfil</h3> 
+            <p><i class="bi bi-calendar-event"></i> June 21, 2026</p> 
+            <p><i class="bi bi-geo-alt"></i> IIT Delhi</p> 
+            <a href="book.html" class="book-btn">Book Now</a> 
+        </div> 
+    </div>
+    
+    <div class="event-card" data-category="music"> 
+        <img src="../assets/cards/musiccard5.jpg" alt=""> 
+        <div class="event-content"> 
+            <h3>Saarang</h3> 
+            <p><i class="bi bi-calendar-event"></i> January 8-12, 2027</p> 
+            <p><i class="bi bi-geo-alt"></i> IIT Madras</p> 
+            <a href="book.html" class="book-btn">Book Now</a> 
+        </div> 
+    </div>
+    
+    <div class="event-card" data-category="workshop"> 
+        <img src="../assets/cards/workshopcard.jpg" alt=""> 
+        <div class="event-content"> 
+            <h3>Makerspace Summer Workshop</h3> 
+            <p><i class="bi bi-calendar-event"></i> June 12-20, 2027</p> 
+            <p><i class="bi bi-geo-alt"></i> IIT Bombay</p> 
+            <a href="book.html" class="book-btn">Book Now</a> 
+        </div> 
+    </div>
+    
+    <div class="event-card" data-category="sports"> 
+        <img src="../assets/cards/sportcard4.jpg" alt=""> 
+        <div class="event-content"> 
+            <h3>Shaurya</h3> 
+            <p><i class="bi bi-calendar-event"></i> October 9, 2026</p> 
+            <p><i class="bi bi-geo-alt"></i> IIT Kharagpur</p> 
+            <a href="book.html" class="book-btn">Book Now</a> 
+        </div> 
+    </div>
+    
+    <div class="event-card" data-category="sports"> 
+        <img src="../assets/cards/sportcard.jpg" alt=""> 
+        <div class="event-content"> 
+            <h3>Aavhan</h3> 
+            <p><i class="bi bi-calendar-event"></i> April 5, 2027</p> 
+            <p><i class="bi bi-geo-alt"></i> IIT Bombay</p> 
+            <a href="book.html" class="book-btn">Book Now</a> 
+        </div> 
+    </div>
+
+</div>
+
+</section>
+
+<footer class="footer">
+
+<p>
+© 2026 BookMyEvent. All Rights Reserved.
+</p>
+
+</footer>
+
+<script>
+
+const searchBox =
+document.getElementById("searchBox");
+
+const filter =
+document.getElementById("eventFilter");
+
+const cards =
+document.querySelectorAll(".event-card");
+
+function filterEvents(){
+
+const search =
+searchBox.value.toLowerCase();
+
+const category =
+filter.value;
+
+cards.forEach(card=>{
+
+const title =
+card.querySelector("h3")
+.textContent.toLowerCase();
+
+const matchesSearch =
+title.includes(search);
+
+const matchesCategory =
+category==="all" ||
+card.dataset.category===category;
+
+if(matchesSearch && matchesCategory){
+
+card.style.display="block";
+
+}else{
+
+card.style.display="none";
+
+}
+
+});
+
+}
+
+searchBox.addEventListener(
+"keyup",
+filterEvents
+);
+
+filter.addEventListener(
+"change",
+filterEvents
+);
+
+</script>
+
+</body>
+</html>

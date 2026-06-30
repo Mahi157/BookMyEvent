@@ -1,0 +1,974 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BookMyEvent</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+  <link rel="icon" href="https://i.pinimg.com/originals/01/ca/da/01cada77a0a7d326d85b7969fe26a728.jpg">
+</head>
+
+<body>
+  <!-- header -->
+  <header class="nav">
+    <div class="nav-left">
+      <div class="nav-logo">
+
+        <a href="index.html" class="logo-container">
+          <img class="logo" src="assets/Logo.png" alt="Book My Event">
+        </a>
+      </div>
+    </div>
+
+    <div class="nav-center">
+      <div class="nav-search">
+
+        <a href="pages/search.html">
+          <i class="bi-search"></i>
+          <input class="nav-search-input" type="search"
+            placeholder="Search for Tech Fests, Coding Contest, Music Concert and Sports Tournament">
+        </a>
+
+      </div>
+    </div>
+
+    <div class="nav-right">
+      <div class="nav-accounts">
+
+        <div class="location-selector">
+
+
+          <span id="selected-city">Select Your Region</span>
+
+          <i class="bi bi-chevron-down"></i>
+
+          <div class="location-popup">
+
+            <h4>Select Your Region</h4>
+
+            <button>Mumbai</button>
+            <button>Delhi</button>
+            <button>Bengaluru</button>
+            <button>Chennai</button>
+            <button>Hyderabad</button>
+
+          </div>
+        </div>
+
+        <a href="pages/signin.html" class="nav-accounts-signin">Sign in</a>
+
+        <i class="bi-list" id="menuBtn"></i>
+        <div class="side-menu" id="sideMenu">
+
+          <a href="profile.html">My Profile</a>
+
+          <a href="bookings.html">My Bookings</a>
+
+          <a href="help.html">Help</a>
+
+          <a href="contact.html">Contact Us</a>
+
+        </div>
+
+
+      </div>
+    </div>
+
+
+  </header>
+
+  <!-- Navbar -->
+
+  <nav class="subnav">
+
+    <div class="left-subnav">
+      <a href="pages/tech.html">Tech</a>
+      <a href="pages/cultural.html">Cultural</a>
+      <a href="pages/music.html">Music</a>
+      <a href="pages/workshop.html">Workshop</a>
+      <a href="pages/sport.html">Sports</a>
+      <a href="">Hackathon</a>
+      <a href="">Competitions</a>
+    </div>
+
+    <div class="right-subnav">
+      <a href="pages/recommend.html">Recommended</a>
+      <a href="">Trending</a>
+      <a href="pages/Upcoming.html">Upcoming</a>
+    </div>
+
+  </nav>
+
+  <!-- Hero Section -->
+
+  <section class="hero-section">
+
+    <div class="carousel-track">
+      <div class="slide">
+        <img src="assets/carousel/collegeevents.jpg" alt="Hero 1" />
+      </div>
+      <div class="slide">
+        <img src="assets/carousel/hackathon.jpg" alt="Hero 2" />
+      </div>
+      <div class="slide">
+        <img src="assets/carousel/techfest.jpg" alt="Hero 3" />
+      </div>
+      <div class="slide">
+        <img src="assets/carousel/sportstournament.jpg" alt="Hero 4" />
+
+      </div>
+
+    </div>
+    <button class="hero-left">
+      <i class="bi-chevron-compact-left"></i>
+    </button>
+    <button class="hero-right">
+      <i class="bi-chevron-compact-right"></i>
+    </button>
+
+    <div class="carousel-dots">
+      <span class="dot active"></span>
+      <span class="dot"></span>
+      <span class="dot"></span>
+      <span class="dot"></span>
+    </div>
+
+  </section>
+
+  <!-- Category Cards -->
+
+  <section class="category-block">
+
+    <div class="category">
+      <h2>Recommended Events</h2>
+      <a href="pages/recommend.html" class="see-all-btn">
+        See All <i class="bi bi-arrow-right"></i>
+      </a>
+      <button class="card-left">
+        <i class="bi-chevron-compact-left"></i>
+      </button>
+      <div class="card-row">
+        <div class="card">
+          <img src="assets/cards/workshopcard2.jpg" alt="Tech">
+          <div class="card-info">
+
+            <h3>Biological & Technical 2 Days Offline Workshop</h3>
+
+            <p>
+              <i class="bi-calendar-event"></i>
+              April 11-12, 2026
+            </p>
+
+            <p>
+              <i class="bi-geo-alt"></i>
+              IIT Guwahati
+            </p>
+
+            <a href="pages/book.html" class="card-btn">
+              Book Now
+            </a>
+          </div>
+        </div>
+        <div class="card">
+          <img src="assets/cards/culturalcard2.jpg" alt="Tech">
+          <div class="card-info">
+
+            <h3>Spring Fest</h3>
+
+            <p>
+              <i class="bi-calendar-event"></i>
+              August 24, 2026
+            </p>
+
+            <p>
+              <i class="bi-geo-alt"></i>
+              IIT Kharagpur
+            </p>
+
+            <a href="pages/book.html" class="card-btn">
+              Book Now
+            </a>
+          </div>
+        </div>
+        <div class="card">
+          <img src="assets/cards/musiccard2.jpg" alt="Tech">
+          <div class="card-info">
+
+            <h3>Qurated Mehfil</h3>
+
+            <p>
+              <i class="bi-calendar-event"></i>
+              June 21, 2026
+            </p>
+
+            <p>
+              <i class="bi-geo-alt"></i>
+              IIT Delhi
+            </p>
+
+            <a href="pages/book.html" class="card-btn">
+              Book Now
+            </a>
+          </div>
+        </div>
+        <div class="card">
+          <img src="assets/cards/techcard5.jpg" alt="Tech">
+          <div class="card-info">
+
+            <h3>AGENTATHON</h3>
+
+            <p>
+              <i class="bi-calendar-event"></i>
+              July 19-20, 2026
+            </p>
+
+            <p>
+              <i class="bi-geo-alt"></i>
+              KG College of Arts and Science
+            </p>
+
+            <a href="pages/book.html" class="card-btn">
+              Book Now
+            </a>
+          </div>
+        </div>
+        <div class="card">
+          <img src="assets/cards/sportcard3.jpg" alt="Tech">
+          <div class="card-info">
+
+            <h3>SportOasis</h3>
+
+            <p>
+              <i class="bi-calendar-event"></i>
+              October 24, 2025
+            </p>
+
+            <p>
+              <i class="bi-geo-alt"></i>
+              IIT Delhi - Abu Dhabi Campus
+            </p>
+
+            <a href="pages/book.html" class="card-btn">
+              Book Now
+            </a>
+          </div>
+        </div>
+        <button class="card-right">
+          <i class="bi-chevron-compact-right"></i>
+        </button>
+      </div>
+    </div>
+
+    <div class="category">
+      <h2>Tech Events</h2>
+      <a href="pages/tech.html" class="see-all-btn">
+        See All <i class="bi bi-arrow-right"></i>
+      </a>
+      <button class="card-left">
+        <i class="bi-chevron-compact-left"></i>
+      </button>
+      <div class="card-row">
+        <div class="card">
+          <img src="assets/cards/techcard.jpg" alt="Tech">
+          <div class="card-info">
+
+            <h3>Techfest 2026 Zonal</h3>
+
+            <p>
+              <i class="bi-calendar-event"></i>
+              October 12, 2026
+            </p>
+
+            <p>
+              <i class="bi-geo-alt"></i>
+              IIT Gandhinagar
+            </p>
+
+            <a href="pages/book.html" class="card-btn">
+              Book Now
+            </a>
+
+          </div>
+        </div>
+        <div class="card">
+          <img src="assets/cards/techcard2.jpg" alt="Tech">
+          <div class="card-info">
+
+            <h3>Techkriti</h3>
+
+            <p>
+              <i class="bi-calendar-event"></i>
+              July 19–22, 2026
+            </p>
+
+            <p>
+              <i class="bi-geo-alt"></i>
+              IIT Kanpur
+            </p>
+
+            <a href="pages/book.html" class="card-btn">
+              Book Now
+            </a>
+          </div>
+        </div>
+        <div class="card">
+          <img src="assets/cards/techcard3.jpg" alt="Tech">
+          <div class="card-info">
+
+            <h3>National Space Hackathon</h3>
+
+            <p>
+              <i class="bi-calendar-event"></i>
+              July 5, 2026
+            </p>
+
+            <p>
+              <i class="bi-geo-alt"></i>
+              IIT Delhi
+            </p>
+
+            <a href="pages/book.html" class="card-btn">
+              Book Now
+            </a>
+          </div>
+        </div>
+        <div class="card">
+          <img src="assets/cards/techcard4.jpg" alt="Tech">
+          <div class="card-info">
+
+            <h3>AGENTATHON</h3>
+
+            <p>
+              <i class="bi-calendar-event"></i>
+              July 27, 2026
+            </p>
+
+            <p>
+              <i class="bi-geo-alt"></i>
+              Paytm Office,Sector 98,Noida
+            </p>
+
+            <a href="pages/book.html" class="card-btn">
+              Book Now
+            </a>
+          </div>
+        </div>
+        <div class="card">
+          <img src="assets/cards/techcard5.jpg" alt="Tech">
+          <div class="card-info">
+
+            <h3>AGENTATHON</h3>
+
+            <p>
+              <i class="bi-calendar-event"></i>
+              July 19-20, 2026
+            </p>
+
+            <p>
+              <i class="bi-geo-alt"></i>
+              KG College of Arts and Science
+            </p>
+
+            <a href="pages/book.html" class="card-btn">
+              Book Now
+            </a>
+          </div>
+        </div>
+        <button class="card-right">
+          <i class="bi-chevron-compact-right"></i>
+        </button>
+      </div>
+    </div>
+
+    <div class="category">
+      <h2>Cultural Events</h2>
+      <a href="pages/cultural.html" class="see-all-btn">
+        See All <i class="bi bi-arrow-right"></i>
+      </a>
+      <button class="card-left">
+        <i class="bi-chevron-compact-left"></i>
+      </button>
+      <div class="card-row">
+        <div class="card">
+          <img src="assets/cards/culturalcard.jpg" alt="Tech">
+          <div class="card-info">
+
+            <h3>Dharohar</h3>
+
+            <p>
+              <i class="bi-calendar-event"></i>
+              July 26, 2026
+            </p>
+
+            <p>
+              <i class="bi-geo-alt"></i>
+              IIT Bombay
+            </p>
+
+            <a href="pages/book.html" class="card-btn">
+              Book Now
+            </a>
+          </div>
+        </div>
+        <div class="card">
+          <img src="assets/cards/culturalcard2.jpg" alt="Tech">
+          <div class="card-info">
+
+            <h3>Spring Fest</h3>
+
+            <p>
+              <i class="bi-calendar-event"></i>
+              August 24, 2026
+            </p>
+
+            <p>
+              <i class="bi-geo-alt"></i>
+              IIT Kharagpur
+            </p>
+
+            <a href="pages/book.html" class="card-btn">
+              Book Now
+            </a>
+          </div>
+        </div>
+        <div class="card">
+          <img src="assets/cards/culturalcard3.jpg" alt="Tech">
+          <div class="card-info">
+
+            <h3>Mimansa</h3>
+
+            <p>
+              <i class="bi-calendar-event"></i>
+              September 26, 2026
+            </p>
+
+            <p>
+              <i class="bi-geo-alt"></i>
+              IIT Delhi
+            </p>
+
+            <a href="pages/book.html" class="card-btn">
+              Book Now
+            </a>
+          </div>
+        </div>
+        <div class="card">
+          <img src="assets/cards/culturalcard4.jpg" alt="Tech">
+          <div class="card-info">
+
+            <h3>On Spot Photography</h3>
+
+            <p>
+              <i class="bi-calendar-event"></i>
+              April 9-11, 2026
+            </p>
+
+            <p>
+              <i class="bi-geo-alt"></i>
+              IIT Kharagpur
+            </p>
+
+            <a href="pages/book.html" class="card-btn">
+              Book Now
+            </a>
+          </div>
+        </div>
+        <div class="card">
+          <img src="assets/cards/culturalcard5.jpg" alt="Tech">
+          <div class="card-info">
+
+            <h3>Rangreet</h3>
+
+            <p>
+              <i class="bi-calendar-event"></i>
+              August 9, 2026
+            </p>
+
+            <p>
+              <i class="bi-geo-alt"></i>
+              Delhi University
+            </p>
+
+            <a href="pages/book.html" class="card-btn">
+              Book Now
+            </a>
+          </div>
+        </div>
+        <button class="card-right">
+          <i class="bi-chevron-compact-right"></i>
+        </button>
+      </div>
+    </div>
+
+    <div class="category">
+      <h2>Workshops</h2>
+      <a href="pages/workshop.html" class="see-all-btn">
+        See All <i class="bi bi-arrow-right"></i>
+      </a>
+      <button class="card-left">
+        <i class="bi-chevron-compact-left"></i>
+      </button>
+      <div class="card-row">
+        <div class="card">
+          <img src="assets/cards/workshopcard.jpg" alt="Tech">
+          <div class="card-info">
+
+            <h3>Makerspace Summer Worksho</h3>
+
+            <p>
+              <i class="bi-calendar-event"></i>
+              June 12-20, 2026
+            </p>
+
+            <p>
+              <i class="bi-geo-alt"></i>
+              IIT Bombay
+            </p>
+
+            <a href="pages/book.html" class="card-btn">
+              Book Now
+            </a>
+          </div>
+        </div>
+        <div class="card">
+          <img src="assets/cards/workshopcard2.jpg" alt="Tech">
+          <div class="card-info">
+
+            <h3>Biological & Technical 2 Days Offline Workshop</h3>
+
+            <p>
+              <i class="bi-calendar-event"></i>
+              April 11-12, 2026
+            </p>
+
+            <p>
+              <i class="bi-geo-alt"></i>
+              IIT Guwahati
+            </p>
+
+            <a href="pages/book.html" class="card-btn">
+              Book Now
+            </a>
+          </div>
+        </div>
+        <div class="card">
+          <img src="assets/cards/workshopcard3.jpg" alt="Tech">
+          <div class="card-info">
+
+            <h3>2-Day Offline Workshop</h3>
+
+            <p>
+              <i class="bi-calendar-event"></i>
+              January 24-25, 2026
+            </p>
+
+            <p>
+              <i class="bi-geo-alt"></i>
+              IIT Kharagpur
+            </p>
+
+            <a href="pages/book.html" class="card-btn">
+              Book Now
+            </a>
+          </div>
+        </div>
+        <div class="card">
+          <img src="assets/cards/workshopcard4.jpg" alt="Tech">
+          <div class="card-info">
+
+            <h3>2 Days Offline Workshop</h3>
+
+            <p>
+              <i class="bi-calendar-event"></i>
+              February 21-22, 2026
+            </p>
+
+            <p>
+              <i class="bi-geo-alt"></i>
+              IIT Guwahati
+            </p>
+
+            <a href="pages/book.html" class="card-btn">
+              Book Now
+            </a>
+          </div>
+        </div>
+        <div class="card">
+          <img src="assets/cards/workshopcard5.jpg" alt="Tech">
+          <div class="card-info">
+
+            <h3>Think India North East Zone Workshop </h3>
+
+            <p>
+              <i class="bi-calendar-event"></i>
+              March 28-29, 2026
+            </p>
+
+            <p>
+              <i class="bi-geo-alt"></i>
+              IIT Guwahati
+            </p>
+
+            <a href="pages/book.html" class="card-btn">
+              Book Now
+            </a>
+          </div>
+        </div>
+        <button class="card-right">
+          <i class="bi-chevron-compact-right"></i>
+        </button>
+      </div>
+    </div>
+
+    <div class="category">
+      <h2>Sport Events</h2>
+      <a href="pages/sport.html" class="see-all-btn">
+        See All <i class="bi bi-arrow-right"></i>
+      </a>
+      <button class="card-left">
+        <i class="bi-chevron-compact-left"></i>
+      </button>
+      <div class="card-row">
+        <div class="card">
+          <img src="assets/cards/sportcard.jpg" alt="Tech">
+          <div class="card-info">
+
+            <h3>Aavhan</h3>
+
+            <p>
+              <i class="bi-calendar-event"></i>
+              April 5, 2026
+            </p>
+
+            <p>
+              <i class="bi-geo-alt"></i>
+              IIT Bombay
+            </p>
+
+            <a href="pages/book.html" class="card-btn">
+              Book Now
+            </a>
+          </div>
+        </div>
+        <div class="card">
+          <img src="assets/cards/sportcard2.jpg" alt="Tech">
+          <div class="card-info">
+
+            <h3>Spirit</h3>
+
+            <p>
+              <i class="bi-calendar-event"></i>
+              October 30, 2025
+            </p>
+
+            <p>
+              <i class="bi-geo-alt"></i>
+              IIT Guwahati
+            </p>
+
+            <a href="pages/book.html" class="card-btn">
+              Book Now
+            </a>
+          </div>
+        </div>
+        <div class="card">
+          <img src="assets/cards/sportcard3.jpg" alt="Tech">
+          <div class="card-info">
+
+            <h3>SportOasis</h3>
+
+            <p>
+              <i class="bi-calendar-event"></i>
+              October 24, 2025
+            </p>
+
+            <p>
+              <i class="bi-geo-alt"></i>
+              IIT Delhi - Abu Dhabi Campus
+            </p>
+
+            <a href="pages/book.html" class="card-btn">
+              Book Now
+            </a>
+          </div>
+        </div>
+        <div class="card">
+          <img src="assets/cards/sportcard4.jpg" alt="Tech">
+          <div class="card-info">
+
+            <h3>Shaurya</h3>
+
+            <p>
+              <i class="bi-calendar-event"></i>
+              October 9, 2026
+            </p>
+
+            <p>
+              <i class="bi-geo-alt"></i>
+              IIT Kharagpur
+            </p>
+
+            <a href="pages/book.html" class="card-btn">
+              Book Now
+            </a>
+          </div>
+        </div>
+        <div class="card">
+          <img src="assets/cards/sportcard5.jpg" alt="Tech">
+          <div class="card-info">
+
+            <h3>Udghosh</h3>
+
+            <p>
+              <i class="bi-calendar-event"></i>
+              October 9, 2025
+            </p>
+
+            <p>
+              <i class="bi-geo-alt"></i>
+              IIT Kanpur
+            </p>
+
+            <a href="pages/book.html" class="card-btn">
+              Book Now
+            </a>
+          </div>
+        </div>
+        <button class="card-right">
+          <i class="bi-chevron-compact-right"></i>
+        </button>
+      </div>
+    </div>
+
+    <div class="category">
+      <h2>Music Events</h2>
+      <a href="pages/music.html" class="see-all-btn">
+        See All <i class="bi bi-arrow-right"></i>
+      </a>
+      <button class="card-left">
+        <i class="bi-chevron-compact-left"></i>
+      </button>
+      <div class="card-row">
+        <div class="card">
+          <img src="assets/cards/musiccard.jpg" alt="Tech">
+          <div class="card-info">
+
+            <h3>Surbahaar</h3>
+
+            <p>
+              <i class="bi-calendar-event"></i>
+              March 22, 2026
+            </p>
+
+            <p>
+              <i class="bi-geo-alt"></i>
+              IIT Bombay
+            </p>
+
+            <a href="pages/book.html" class="card-btn">
+              Book Now
+            </a>
+          </div>
+        </div>
+        <div class="card">
+          <img src="assets/cards/musiccard2.jpg" alt="Tech">
+          <div class="card-info">
+
+            <h3>Qurated Mehfil</h3>
+
+            <p>
+              <i class="bi-calendar-event"></i>
+              June 21, 2026
+            </p>
+
+            <p>
+              <i class="bi-geo-alt"></i>
+              IIT Delhi
+            </p>
+
+            <a href="pages/book.html" class="card-btn">
+              Book Now
+            </a>
+          </div>
+        </div>
+        <div class="card">
+          <img src="assets/cards/musiccard3.jpg" alt="Tech">
+          <div class="card-info">
+
+            <h3>Mere Naam Se Bulao Mujhe</h3>
+
+            <p>
+              <i class="bi-calendar-event"></i>
+              March 1, 2026
+            </p>
+
+            <p>
+              <i class="bi-geo-alt"></i>
+              IIT Delhi
+            </p>
+
+            <a href="pages/book.html" class="card-btn">
+              Book Now
+            </a>
+          </div>
+        </div>
+        <div class="card">
+          <img src="assets/cards/musiccard4.jpg" alt="Tech">
+          <div class="card-info">
+
+            <h3>Surjahan</h3>
+
+            <p>
+              <i class="bi-calendar-event"></i>
+              January 31, 2026
+            </p>
+
+            <p>
+              <i class="bi-geo-alt"></i>
+              IIT Kharagpur
+            </p>
+
+            <a href="pages/book.html" class="card-btn">
+              Book Now
+            </a>
+          </div>
+        </div>
+        <div class="card">
+          <img src="assets/cards/musiccard5.jpg" alt="Tech">
+          <div class="card-info">
+
+            <h3>Saarang</h3>
+
+            <p>
+              <i class="bi-calendar-event"></i>
+              January 8-12, 2026
+            </p>
+
+            <p>
+              <i class="bi-geo-alt"></i>
+              IIT Madras
+            </p>
+
+            <a href="pages/book.html" class="card-btn">
+              Book Now
+            </a>
+          </div>
+        </div>
+        <button class="card-right">
+          <i class="bi-chevron-compact-right"></i>
+        </button>
+      </div>
+    </div>
+
+  </section>
+
+  <!-- Newsletter -->
+
+  <section class="newsletter">
+
+    <h2>Stay Updated</h2>
+
+    <p>
+      Get notified about upcoming events and workshops.
+    </p>
+
+    <div class="newsletter-form">
+
+      <input type="email" placeholder="Enter your email">
+
+      <button>
+        Subscribe
+      </button>
+
+    </div>
+
+  </section>
+
+  <!-- Footer -->
+
+  <footer class="footer">
+
+    <div class="footer-top">
+
+
+      <div class="footer-brand">
+
+        <img src="assets/Logo.png" alt="BookMyEvent">
+
+        <p>
+          Discover Tech Fests, Hackathons,
+          Cultural Events, Workshops and
+          Sports Competitions across India.
+        </p>
+
+        <div class="social-icons">
+
+          <i class="bi bi-instagram"></i>
+
+          <i class="bi bi-linkedin"></i>
+
+          <i class="bi bi-youtube"></i>
+
+          <i class="bi bi-twitter-x"></i>
+
+        </div>
+
+      </div>
+
+      <div class="footer-column">
+
+        <h3>Events</h3>
+
+        <a href="pages/tech.html">Tech Events</a>
+
+        <a href="pages/music.html">Music Events</a>
+
+        <a href="pages/sport.html">Sports Events</a>
+
+        <a href="pages/workshop.html">Workshops</a>
+
+      </div>
+
+      <div class="footer-column">
+
+        <h3>Company</h3>
+
+        <a href="about.html">About Us</a>
+
+        <a href="#">Careers</a>
+
+        <a href="contact.html">Contact</a>
+
+        <a href="#">Blog</a>
+
+      </div>
+
+      <div class="footer-column">
+
+        <h3>Support</h3>
+
+        <a href="help.html">Help Center</a>
+
+        <a href="#">FAQ</a>
+
+        <a href="#">Terms</a>
+
+        <a href="#">Privacy</a>
+
+      </div>
+
+
+    </div>
+
+
+  </footer>
+
+  <script src="script.js"></script>
+
+
+</body>
+
+</html>

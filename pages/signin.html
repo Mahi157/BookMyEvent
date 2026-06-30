@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>BookMyEvent - Sign In</title>
+<style>
+    *{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Segoe UI',sans-serif;
+}
+
+body{
+    background:#f4f4f4;
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.signin-card{
+    width:400px;
+    background:white;
+    padding:35px;
+    border-radius:15px;
+    box-shadow:0 5px 20px rgba(0,0,0,0.15);
+    transition:.3s;
+}
+
+.signin-card:hover{
+
+   transform:translateY(-5px);
+   box-shadow:0 12px 35px rgba(0,0,0,.15);
+}
+
+.signin-card input{
+    transition:0.3s;
+}
+
+.signin-card input:focus{
+
+    border-color:#EB4E32;
+
+    box-shadow:
+    0 0 8px rgba(235,78,50,.3);
+
+    transform:scale(1.02);
+}
+
+.logo-container{
+    display:flex;
+    justify-content:center;
+    margin-bottom:15px;
+}
+
+.signin-logo{
+    width:180px;
+    height:auto;
+    object-fit:contain;
+}
+
+.signin-card p{
+    text-align:center;
+    color:#666;
+    margin-bottom:20px;
+}
+
+.google-btn{
+    width:100%;
+    padding:12px;
+    border:1px solid #ddd;
+    background:white;
+    border-radius:8px;
+    cursor:pointer;
+    font-size:15px;
+    margin-bottom:20px;
+    transition:.3s;
+}
+
+.google-btn:hover{
+
+background:#f5f5f5;
+transform:translateY(-2px);
+box-shadow:0 4px 12px rgba(0,0,0,.15);
+}
+
+.google-btn i{
+    margin-right:8px;
+}
+
+.divider{
+    text-align:center;
+    margin:15px 0;
+    color:#999;
+}
+
+input{
+    width:100%;
+    padding:12px;
+    margin-bottom:15px;
+    border:1px solid #ccc;
+    border-radius:8px;
+}
+
+.signin-btn{
+    width:100%;
+    padding:12px;
+    background:#EB4E32;
+    color:white;
+    border:none;
+    border-radius:8px;
+    font-size:16px;
+    cursor:pointer;
+    transition:.3s;
+}
+
+.signin-btn:hover{
+   background:#d8432a;
+   transform:translateY(-2px);
+   box-shadow:0 6px 15px rgba(0,0,0,.2);
+}
+
+.forgot{
+    display:block;
+    text-align:center;
+    margin-top:15px;
+    text-decoration:none;
+    color:#EB4E32;
+}
+
+.create-account{
+    margin-top:25px;
+}
+
+.create-btn{
+    width:100%;
+    padding:12px;
+    border:2px solid #EB4E32;
+    background:white;
+    color:#EB4E32;
+    border-radius:8px;
+    cursor:pointer;
+    transition:.3s;
+}
+
+.create-btn:hover{
+background:#EB4E32;
+color:white;
+transform:translateY(-2px);
+}
+
+</style>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+</head>
+<body>
+
+<div class="signin-container">
+
+    <div class="signin-card">
+
+        <div class="logo-container">
+
+           <a href="../index.html"> 
+            <img
+                src="../assets/Logo.png"
+                alt="BookMyEvent Logo"
+                class="signin-logo">
+            </a>
+        
+        </div>
+        <p>Welcome Back</p>
+
+        <button class="google-btn">
+            <i class="bi bi-google"></i>
+            Continue with Google
+        </button>
+
+        <div class="divider">
+            <span>OR</span>
+        </div>
+
+        <input type="email" placeholder="Email Address">
+
+        <input type="password" placeholder="Password">
+
+        <button class="signin-btn">
+            Sign In
+        </button>
+
+        <a href="#" class="forgot">
+            Forgot Password?
+        </a>
+
+        <p class="create-account">
+            New User?
+        </p>
+
+        <button class="create-btn">
+            Create Account
+        </button>
+
+    </div>
+
+</div>
+
+</body>
+</html>

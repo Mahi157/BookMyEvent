@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Book Event | BookMyEvent</title>
+
+<link rel="stylesheet"
+href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+
+<style>
+.booking-container{
+display:flex;
+justify-content:center;
+padding:60px 20px;
+min-height:80vh;
+background:#f5f5f5;
+}
+
+.booking-form{
+width:100%;
+max-width:550px;
+background:white;
+padding:40px;
+border-radius:16px;
+box-shadow:0 5px 20px rgba(0,0,0,.12);
+}
+
+.booking-logo{
+display:block;
+width:180px;
+margin:0 auto 20px;
+}
+
+.booking-form h2{
+text-align:center;
+margin-bottom:10px;
+}
+
+.subtitle{
+text-align:center;
+color:#666;
+margin-bottom:30px;
+}
+
+.form-group{
+margin-bottom:18px;
+}
+
+.form-group label{
+display:block;
+margin-bottom:6px;
+font-weight:600;
+}
+
+.form-group input,
+.form-group select{
+width:100%;
+padding:12px;
+border:1px solid #ccc;
+border-radius:8px;
+}
+
+.form-group input:focus,
+.form-group select:focus{
+outline:none;
+border-color:#EB4E32;
+}
+
+.register-btn{
+width:100%;
+padding:14px;
+background:#EB4E32;
+color:white;
+border:none;
+border-radius:8px;
+cursor:pointer;
+font-size:16px;
+font-weight:600;
+transition:.3s;
+}
+
+.register-btn:hover{
+background:#d8432a;
+transform:translateY(-2px);
+}
+
+.success-message{
+display:none;
+margin-top:20px;
+background:#d4edda;
+color:#155724;
+padding:15px;
+border-radius:8px;
+text-align:center;
+}
+
+
+</style>
+
+</head>
+
+<body>
+
+    <section class="booking-container">
+
+        <div class="booking-form">
+        
+        <img src="../assets/Logo.png" class="booking-logo">
+        
+        <h2>Event Registration</h2>
+        
+        <p class="subtitle">
+        Complete your details to confirm your registration.
+        </p>
+        
+        <div class="form-group">
+        <label>Full Name</label>
+        <input type="text" placeholder="Enter your full name">
+        </div>
+        
+        <div class="form-group">
+        <label>Email Address</label>
+        <input type="email" placeholder="Enter your email">
+        </div>
+        
+        <div class="form-group">
+        <label>Phone Number</label>
+        <input type="tel" placeholder="Enter phone number">
+        </div>
+        
+        <div class="form-group">
+        <label>College / University</label>
+        <input type="text" placeholder="Enter institution name">
+        </div>
+        
+        <div class="form-group">
+        <label>Branch / Department</label>
+        <input type="text" placeholder="Enter branch">
+        </div>
+        
+        <div class="form-group">
+        <label>Year of Study</label>
+        <select>
+        <option>First Year</option>
+        <option>Second Year</option>
+        <option>Third Year</option>
+        <option>Final Year</option>
+        <option>Postgraduate</option>
+        </select>
+        </div>
+        
+        <div class="form-group">
+        <label>Number of Tickets</label>
+        <select>
+        <option>1</option>
+        <option>2</option>
+        <option>3</option>
+        <option>4</option>
+        <option>5</option>
+        </select>
+        </div>
+        
+        <button class="register-btn">
+        Confirm Registration
+        </button>
+        
+        <div class="success-message">
+        Registration Successful!
+        </div>
+        
+        </div>
+        
+        </section>
+        
+
+<script>
+
+const btn =
+document.querySelector(".register-btn");
+
+const msg =
+document.querySelector(".success-message");
+
+btn.addEventListener("click",()=>{
+
+msg.style.display="block";
+
+msg.innerHTML=
+'<i class="bi bi-check-circle-fill"></i>Registration Successful!';
+
+});
+
+
+</script>
+
+</body>
+</html>
